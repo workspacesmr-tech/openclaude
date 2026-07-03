@@ -5,6 +5,7 @@ import { registerClaudeInChromeSkill } from './claudeInChrome.js'
 import { registerDebugSkill } from './debug.js'
 import { registerKeybindingsSkill } from './keybindings.js'
 import { registerLoopSkill } from './loop.js'
+import { registerI18nSkill } from './i18n.js'
 import { registerSimplifySkill } from './simplify.js'
 import { registerUpdateConfigSkill } from './updateConfig.js'
 
@@ -19,6 +20,7 @@ import { registerUpdateConfigSkill } from './updateConfig.js'
  */
 export function initBundledSkills(): void {
   registerUpdateConfigSkill()
+  registerI18nSkill()
   registerKeybindingsSkill()
   registerDebugSkill()
   registerSimplifySkill()
